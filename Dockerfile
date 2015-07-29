@@ -1,7 +1,6 @@
 FROM debian:8.1
 
-RUN apt-get update
-RUN apt-get install --assume-yes \
+RUN apt-get update && apt-get install --assume-yes \
     python \
     build-essential \
     libncurses5-dev \
